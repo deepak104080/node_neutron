@@ -32,3 +32,8 @@ eventEmitter.on('newevent2', (a,b) => {
 // button.addEventListner('click', function() {
 
 // })
+
+// .off
+// .once
+// .addListner
+// .maxlistners
