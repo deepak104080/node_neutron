@@ -22,3 +22,5 @@ const server = http.createServer((req, resp) => {
 server.listen(port, hostname, () => {
     console.log(`Server has started at http://${hostname}:${port}/`);
 })
+
+// HTTP Response Status Codes - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
