@@ -1,8 +1,1 @@
-Windows_NT
-Windows_NT
-Windows_NT
-Windows_NT
-Windows_NT
-Windows_NT
-Windows_NT
-Windows_NT
+log2 file content

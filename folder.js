@@ -70,14 +70,21 @@ fs.readdir('lib', (err, files) => {
     else {
         console.log(files);
         for(element of files) {
-            console.log(element);
-            // fs.readFileSync('./lib/'+element, (err, filedata) => {
-            //     console.log('inside read file sync---');
+            console.log('filename in loop - ', element);
+            fs.readFile('./lib/'+element, (err, filedata) => {
+                if(err) {
+                    console.log('file read failed for - ', element);
+                }
+                else {
+                    console.log(`content of ${element} - ${filedata}`)
+                }
+            })
+            // fs.unlink('./lib/'+element, (err) => {
             //     if(err) {
-            //         console.log('file read failed for - ', element);
+            //         console.log('file delete failed.');
             //     }
             //     else {
-            //         console.log(`content of ${element} - ${filedata}`)
+            //         console.log(`deleted - ${element}`)
             //     }
             // })
         };
